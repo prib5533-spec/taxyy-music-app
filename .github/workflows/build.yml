@@ -29,8 +29,10 @@ jobs:
         -validity 10000 -storepass android -keypass android \
         -dname "CN=Android Debug,O=Android,C=US"
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+    - name: Generate gradlew
+      run: |
+        gradle wrapper --gradle-version 8.7
+        chmod +x gradlew
 
     - name: Build Debug APK
       run: ./gradlew assembleDebug
