@@ -1,0 +1,6 @@
+{
+  "name": "Music Stream",
+  "description": "A fully functional Spotify-like music streaming application built using Kotlin, Jetpack Compose, MVVM Architecture, and Room Database accessing the free Deezer API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
